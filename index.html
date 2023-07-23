@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Password Generator</h1>
+  <div id="intro">
+    <h3>Welcome to the Password Generator! <br>All you have to do is <br>fill out the texts and click generate.</h3>
+  </div>
+  
+  <div id="lock">
+    <img src="https://freeiconshop.com/wp-content/uploads/edd/lock-flat.png" alt="Lock Image" height= 50px  />
+  </div>
+  <div class="form-container">
+    <label for="sinp">Special Characters:</label>
+    <input type="number" id="sinp" name="sinp" min="0" value="0">
+
+    <label for="linp">Lowercase Characters:</label>
+    <input type="number" id="linp" name="linp" min="0" value="0">
+
+    <label for="uinp">Uppercase Characters:</label>
+    <input type="number" id="uinp" name="uinp" min="0" value="0">
+
+    <label for="ninp">Numbers:</label>
+    <input type="number" id="ninp" name="ninp" min="0" value="0">
+
+    <button id="btn-generate">Generate Password</button>
+  </div>
+
+  <div class="output-container">
+    <p>Output:</p>
+    <p id="output"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
